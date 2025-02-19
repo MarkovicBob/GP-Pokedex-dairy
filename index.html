@@ -3,8 +3,61 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./src/main.css" />
+    <title>Pokedex dairy</title>
+    <link href="/src/main.css" rel="stylesheet" />
   </head>
-  <body></body>
+  <body class="h-hvh bg-gray-100">
+    <!-- Header -->
+    <header>
+      <div class="bg-gray-300 flex flex-row justify-between items-center p-2">
+        <img src="./images/International_Pokémon_logo.svg.png" alt="" />
+        <div class="flex flex-row justify-end items-center gap-4 pr-6">
+          <img src="./images/account.png" alt="account" />
+          <img src="./images/settings.png" alt="settings" />
+        </div>
+      </div>
+    </header>
+    <!-- Hero -->
+    <section>
+      <div
+        class="bg-red-100 flex flex-row justify-between items-center p-2 gap-3"
+      >
+        <h1 class="text-5xl font-extrabold p-2 text-nowrap">Pokedex Dairy</h1>
+        <input
+          type="text"
+          class="p-2 w-96 rounded-2xl"
+          placeholder="Search for a Pokemon"
+        />
+        <a
+          href="/favorites.html"
+          class="text-xl text-nowrap bg-gray-400 px-2 py-1 rounded-l-full mr-2 font-semibold"
+          >Favorites List</a
+        >
+      </div>
+    </section>
+    <!-- Aside -->
+    <div class="flex flex-row gap-4">
+      <section>
+        <div
+          class="bg-red-50 flex flex-col justify-between items-center p-2 gap-3"
+        >
+          <button><img src="./images/Button.png" alt="" /></button>
+          <button class="bg-yellow-300 py-1 px-2 w-20 rounded-lg">
+            Electric
+          </button>
+          <button class="bg-green-300 py-1 px-2 w-20 rounded-lg">Grass</button>
+          <button class="bg-red-300 py-1 px-2 w-20 rounded-lg">Fire</button>
+          <button class="bg-blue-300 py-1 px-2 w-20 rounded-lg">Water</button>
+          <button class="bg-slate-300 py-1 px-2 w-20 rounded-lg">Bug</button>
+          <button class="bg-orange-300 py-1 px-2 w-20 rounded-lg">
+            Normal
+          </button>
+        </div>
+      </section>
+    </div>
+    <!-- Footer -->
+    <footer class="w-full bg-gray-300 text-center">
+      &copy;2025 [WDG.21/Pokedex Dairy] All rights reserved. [Boban/Yannis]
+    </footer>
+  </body>
 </html>
