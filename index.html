@@ -23,11 +23,16 @@
         class="bg-red-100 flex flex-row justify-between items-center p-2 gap-3"
       >
         <h1 class="text-5xl font-extrabold p-2 text-nowrap">Pokedex Dairy</h1>
-        <input
+        <div id="searchContainer">
+          <input
+          id="searchInput"
           type="text"
           class="p-2 w-96 rounded-2xl"
           placeholder="Search for a Pokemon"
-        />
+          />
+          <button id="searchButton" class="bg-gray-300 py-1 px-2 w-20 rounded-lg">Search</button>
+        </div>
+        
         <a
           href="/favorites.html"
           class="text-xl text-nowrap bg-gray-400 px-2 py-1 rounded-l-full mr-2 font-semibold"
@@ -36,31 +41,38 @@
       </div>
     </section>
     <!-- Aside -->
-    <div class="flex flex-row gap-4">
-      <section>
-        <div
-          class="bg-red-50 flex flex-col justify-between items-center p-2 gap-3"
-        >
-          <button><img src="./images/Button.png" alt="" /></button>
-          <button class="bg-yellow-300 py-1 px-2 w-20 rounded-lg">
-            Electric
-          </button>
-          <button class="bg-green-300 py-1 px-2 w-20 rounded-lg">Grass</button>
-          <button class="bg-red-300 py-1 px-2 w-20 rounded-lg">Fire</button>
-          <button class="bg-blue-300 py-1 px-2 w-20 rounded-lg">Water</button>
-          <button class="bg-slate-300 py-1 px-2 w-20 rounded-lg">Bug</button>
-          <button class="bg-orange-300 py-1 px-2 w-20 rounded-lg">
-            Normal
-          </button>
-        </div>
-      </section>
-    </div>
-    <div id="pokemon-container" class="grid grid-cols-4 gap-4"></div>
+     <div id="wrapper" class="flex flex-row my-4">
+      <div class="flex flex-row gap-4">
+        <section>
+          <div
+            class="bg-red-50 flex flex-col justify-between items-center p-2 gap-3"
+          >
+            <button id="resetFilter"><img src="./images/Button.png" alt=""/></button>
+            <button class="bg-yellow-300 py-1 px-2 w-20 rounded-lg" id="electricFilter">
+              Electric
+            </button>
+            <button class="bg-green-300 py-1 px-2 w-20 rounded-lg" id="grassFilter">Grass</button>
+            <button class="bg-red-300 py-1 px-2 w-20 rounded-lg" id="fireFilter">Fire</button>
+            <button class="bg-blue-300 py-1 px-2 w-20 rounded-lg" id="waterFilter">Water</button>
+            <button class="bg-slate-300 py-1 px-2 w-20 rounded-lg" id="bugFilter">Bug</button>
+            <button class="bg-purple-300 py-1 px-2 w-20 rounded-lg" id="psychicFilter">Psychic</button>
+            <button class="bg-orange-300 py-1 px-2 w-20 rounded-lg" id="normalFilter">
+              Normal
+            </button>
+            <button class="bg-red-400 py-1 px-2 w-20 rounded-lg" id="poisonFilter">
+              Poison
+            </button>
+          </div>
+        </section>
+      </div>
+      <div id="pokemon-container" class="grid sm:grid-cols-2 lg:grid-cols-5 gap-4 mx-4"></div>
+
+     </div>
+   
     <!-- Footer -->
     <footer class="w-full bg-gray-300 text-center">
       &copy;2025 [WDG.21/Pokedex Dairy] All rights reserved. [Boban/Yannis]
-    </footer>
-    <img src="./images/heatz.png" />
+    </footer>    
     <script type="module" src="./src/index.js"></script>
   </body>
 </html>
